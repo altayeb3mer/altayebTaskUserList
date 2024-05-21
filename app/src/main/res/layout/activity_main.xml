@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Your Shimmer Placeholder Views -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/shimmer_placeholder" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/shimmer_placeholder" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/shimmer_placeholder" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/shimmer_placeholder" />
+            <!-- Add more placeholder views as needed -->
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity"
+    style="@style/Theme.Evaluation__altayebBar"
+    android:id="@+id/refreshLayout"
+
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/user_view_widget"/>
+
+<!--    <androidx.appcompat.widget.AppCompatImageButton-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:background="@drawable/shape_add_bg"-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:src="@drawable/ic_add"-->
+<!--        android:id="@+id/btn_add"-->
+
+<!--        />-->
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_add"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@android:color/white"
+        app:backgroundTint="@color/colorPrimaryLight" />
+</androidx.constraintlayout.widget.ConstraintLayout>

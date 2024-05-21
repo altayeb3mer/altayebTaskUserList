@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Evaluation__altayeb" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <!-- Secondary color -->
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorSecondaryVariant">@color/colorPrimaryLight</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <!-- Navigation bar color -->
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <!-- Customize your theme here -->
+        <item name="toolbarStyle">@style/CustomToolbar</item>
+    </style>
+    <style name="Theme.Evaluation__altayebBar" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <!-- Secondary color -->
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorSecondaryVariant">@color/colorPrimaryLight</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <!-- Navigation bar color -->
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <!-- Customize your theme here -->
+        <item name="toolbarStyle">@style/CustomToolbar</item>
+    </style>
+    <!-- Custom Toolbar Style -->
+    <style name="CustomToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="titleTextColor">@android:color/white</item> <!-- Change this to your desired color -->
+        <item name="subtitleTextColor">@android:color/white</item> <!-- Change this if you have a subtitle -->
+    </style>
+</resources>
